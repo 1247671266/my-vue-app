@@ -1,0 +1,12 @@
+//专门用于 vite.config.ts 这一文件的 TypeScript 配置文件
+//vite.config.ts 是运行在 Node 环境中的，它不应访问浏览器接口，而相应地它需要各种 Node 接口的类型支持
+{
+  //vite.config.ts 文件不需要打包构建，因此无需设置 target 和 sourceMap 等属性
+  "compilerOptions": {
+    "composite": true, // 对于引用项目必须设置该属性
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true // 允许使用 import 导入使用 export = 导出的默认内容
+  },
+  "include": ["vite.config.ts"] // 指明配置覆盖文件
+}
