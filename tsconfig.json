@@ -24,6 +24,7 @@
     "src/**/*.d.ts", 
     "src/**/*.tsx", 
     "src/**/*.vue",
+    "components.d.ts",
     "auto-imports.d.ts" //自动导入模块
   ],
   "references": [{ "path": "./tsconfig.node.json" }],//项目引用（Project References）” 功能,可以为项目不同部分使用不同的typeSrcipt配置文件
